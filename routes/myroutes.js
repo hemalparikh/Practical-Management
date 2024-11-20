@@ -2,7 +2,7 @@ import express from 'express';
 import { createUser, getAllUsers, getAllAdmins, getAllTeachers, getAllStudents } from '../controllers/usercontroller.js';
 import { createSubject, getAllSubjects } from '../controllers/subjectcontroller.js';
 import { createPractical, getAllPracticals, enrollInPractical } from '../controllers/practicalcontroller.js';
-import { isAdmin, isTeacher, isStudent, isAdminOrTeacher } from '../middleware/middleware.js';
+import { isAdmin, isTeacher, isStudent, isAdminOrTeacher } from '../middleware/Middleware.js';
 
 const router = express.Router();
 
